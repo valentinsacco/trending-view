@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Trending View</title>
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+
+    <script defer src='index.js'></script>
+</head>
+<body>
+    <div class='container'>
+        <div class='trend-header'>
+            <input type='url' class='trend-data-url' placeholder='https://api.getdataset.com/v1/topics'/>
+            <button class='trend-data-url-button'>
+                <span>Trend</span>
+            </button>
+        </div>
+        <div class='trend-content'>
+            <div class='trend-content-top-bar'>
+                <div class='select-trending-chart-container'>
+                    <button id='select-chart-button' class='select-trending-chart'>
+                        <span>Trend</span>
+                    </button>
+                    <div class='select-trending-chart-dropdown hidden'>
+                        <button class='select-chart-button'>
+                            <span>Pie Chart</span>
+                        </button>
+                        <button class='select-chart-button'>
+                            <span>Area Chart</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
